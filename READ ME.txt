@@ -1,1 +1,4 @@
-To look at the webpage when assesing/acsessing the assignment, open index.html in your browser. This should run the website locally in your browser.
+To look at the webpage when assesing/acsessing the assignment:
+1) Download the repository as a zip file from GitHub.
+2) Unzip the file and enter the folder.
+3) Open index.html in your browser. This should run the website locally in your browser.
