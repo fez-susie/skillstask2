@@ -1,0 +1,1 @@
+To look at the webpage when assesing/acsessing the assignment, open index.html in your browser. This should run the website locally in your browser.
