@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display for Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shapeStyles.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    <!--Navigation Menu (Navi)-->
+    <div class="navi">
+        <a href="index.html">Home</a>
+        <a href="shape.html" class="active">Images in Shapes</a>
+        <a href="gallery.html">Slideshow Gallery</a>
+        <a href="flex.html">FlexBox Gallery</a>
+        <a href="infinite.html">Infinite Scroller</a>
+    </div>
+    <br>
+    <div class="flex-container" style="justify-content: space-around;">
+        <div onmouseup="fncCircle()" class="activeShapeChoice" id="shapeCircle"><p>Circle</p></div>
+        <div onmouseup="fncHexagon()" class="shapeChoice" id="shapeHex"><p>Hexagon</p></div>
+        <div onmouseup="fncSquare()" class="shapeChoice" id="shapeSquare"><p>Square</p></div>
+        <!--<div onmouseup="fncRandShape()" class="shapeChoice">Random</div>-->
+    </div>
+    <br>
+    <div class="flex-container" style="text-align: center;">
+        <div class="flex-column">
+            <img src="assets\fauna5.jpg" class="circle" id="shape1">
+        </div>
+        <div class="flex-column">
+            <img src="assets\fauna2.jpg" class="circle" id="shape2">
+        </div>
+        <div class="flex-column">
+            <img src="assets\fauna3.jpg" class="circle" id="shape3">
+        </div>
+        <div class="flex-column">
+            <img src="assets\fauna4.jpg" class="circle" id="shape4">
+        </div>
+    </div>
+    <script src="shapeChoice.js"></script>
+</body>
+</html>

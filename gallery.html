@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display for Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="galStyles.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    <!--Navigation Menu (Navi)-->
+    <div class="navi">
+        <a href="index.html">Home</a>
+        <a href="shape.html">Images in Shapes</a>
+        <a href="gallery.html" class="active">Slideshow Gallery</a>
+        <a href="flex.html">FlexBox Gallery</a>
+        <a href="infinite.html">Infinite Scroller</a>
+    </div>
+    <br>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="slide-img-container">
+                <img class="slide-img" src="assets\fauna1.jpg">
+            </div>
+            <div class="caption">Slide 1</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-img-container">
+                <img class="slide-img" src="assets\fauna2.jpg">
+            </div>
+            <div class="caption">Slide 2</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-img-container">
+                <img class="slide-img" src="assets\fauna3.jpg">
+            </div>
+            <div class="caption">Slide 3</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-img-container">
+                <img class="slide-img" src="assets\fauna4.jpg">
+            </div>
+            <div class="caption">Slide 4</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-img-container">
+                <img class="slide-img" src="assets\fauna5.jpg">
+            </div>
+            <div class="caption">Slide 5</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <script src="slideshow.js"></script>
+</body>
+</html>

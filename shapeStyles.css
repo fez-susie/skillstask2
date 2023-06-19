@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+.shapeChoice{
+    width:200px;
+    height:50px;
+    background-color: rgb(116, 85, 65);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px;
+    color: rgb(227, 233, 240);
+    text-transform: uppercase;
+    margin: 4px;
+}
+.shapeChoice:hover{
+    background-color: rgb(227, 233, 240);
+    color: rgb(116, 85, 65);
+}
+.activeShapeChoice{
+    width:200px;
+    height:50px;
+    background-color: rgb(170, 108, 59);
+    cursor:default;
+    text-align: center;
+    border-radius: 50px;
+    color: rgb(227, 233, 240);
+    text-transform: uppercase;
+    margin: 4px;}
+
+/*Circle*/
+.circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/*Square*/
+.square{
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+/*Hexagon*/
+.hex {
+    display: block;
+    margin: 0;
+    width: 250px;
+    height: 216.50635814221956256189375513391px; /* h=w/1.1547005 */
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+.hex img {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+
+/*Container for FlexBox Coppied from flexStyles.css*/
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 4;
+}
+
+/*Column Definition*/
+.flex-column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+/*Image Definition*/
+.flex-column img{
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/*Media Screens for Responsive Display*/
+@media(max-width: 800px) {
+    .flex-column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media(max-width: 600px){
+    .flex-column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}

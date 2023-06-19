@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto;
+    margin: 0;
+}
+
+/*
+82, 126, 62
+96, 124, 60
+102, 148, 69
+102, 151, 68
+99, 127, 68
+83, 91, 70
+51, 86, 88
+
+170, 108, 59
+146, 66, 41
+116, 85, 65
+123, 98, 102
+
+188, 182, 186
+207, 217, 211
+227, 233, 240
+192, 224, 239
+*/
+
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(227, 233, 240);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(207, 217, 211);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(188, 182, 186);
+}
+
+/*Navigation Bar*/
+.navi{
+    background-color: rgb(102, 151, 68);
+    display:flex;
+    overflow: hidden;
+    justify-content: center;
+}
+.navi a{
+    color: rgb(227, 233, 240);
+    text-transform: uppercase;
+    text-align: center;
+    width: 20%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-size: 100%;
+}
+.navi a:hover{
+    background-color: rgb(227, 233, 240);
+    color: rgb(82, 126, 62);
+}
+.navi a.active{
+    background-color: rgb(82, 126, 62);
+    color: rgb(227, 233, 240);
+}
+@media(max-width:800px){
+    body{
+        font-size: 80%;
+    }
+}
+@media(max-width:600px){
+    body{
+        font-size: 70%;
+    }
+}
+
+/*Colours
+
+
+
+
+*/

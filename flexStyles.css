@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Container for FlexBox*/
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 4px;
+}
+
+/*Column Definition*/
+.flex-column{
+    flex:15%;
+    max-width: 25%;
+}
+
+/*Image Definition*/
+.flex-column img{
+    vertical-align: middle;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    padding:4px;
+}
+
+/*Media Screens for Responsive Display*/
+
+@media(max-width: 800px) {
+    .flex-column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media(max-width: 600px){
+    .flex-column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
